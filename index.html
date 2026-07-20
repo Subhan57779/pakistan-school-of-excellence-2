@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan School of Excellence</title>
+    <meta name="description" content="Pakistan School of Excellence, Pirkhel, District Malkand, KPK, Pakistan." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">Pakistan School of Excellence</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#message">Principal's Message</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Excellence in Education</p>
+          <h1>Shaping Bright Futures with Knowledge, Values, and Vision</h1>
+          <p class="lead">
+            Located in Pirkhel, District Malkand, KPK, Pakistan, our school is committed to learning that inspires excellence, discipline, and lifelong success.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about">Discover More</a>
+            <a class="btn btn-secondary" href="#gallery">View Gallery</a>
+            <button id="adminLoginBtn" class="btn btn-secondary" type="button">Admin Login</button>
+          </div>
+        </div>
+
+        <div class="monogram-card" aria-label="School monogram placeholder">
+          <div class="monogram-box">
+            <img id="monogramImage" class="uploaded-image hidden" alt="School monogram" />
+            <div id="monogramPlaceholder" class="placeholder-content">
+              <span>Monogram</span>
+              <small>Upload your school monogram here</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="adminSection" class="admin-panel hidden">
+      <h3>Admin Image Upload</h3>
+      <p>Upload the school monogram and gallery images. These stay on this browser/device for easy management.</p>
+      <div class="upload-grid">
+        <label class="upload-item">
+          <span>Monogram</span>
+          <input type="file" id="monogramInput" accept="image/*" />
+        </label>
+        <label class="upload-item">
+          <span>Gallery Photo 1</span>
+          <input type="file" id="gallery1Input" accept="image/*" />
+        </label>
+        <label class="upload-item">
+          <span>Gallery Photo 2</span>
+          <input type="file" id="gallery2Input" accept="image/*" />
+        </label>
+        <label class="upload-item">
+          <span>Gallery Photo 3</span>
+          <input type="file" id="gallery3Input" accept="image/*" />
+        </label>
+      </div>
+      <div class="upload-actions">
+        <button id="saveImagesBtn" class="btn btn-primary" type="button">Save Images</button>
+        <button id="clearImagesBtn" class="btn btn-secondary" type="button">Clear Images</button>
+      </div>
+    </section>
+
+    <main>
+      <section class="slogans">
+        <div class="slogan-card">
+          <h3>Knowledge is Light</h3>
+          <p>We nurture curiosity and build strong minds through quality education.</p>
+        </div>
+        <div class="slogan-card">
+          <h3>Character Above All</h3>
+          <p>Education is not only about learning, but also about becoming responsible citizens.</p>
+        </div>
+        <div class="slogan-card">
+          <h3>Future in Focus</h3>
+          <p>Every child is encouraged to dream big and achieve with confidence.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <p class="eyebrow">About the School</p>
+          <h2>Serving the community with purpose and pride</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            Pakistan School of Excellence stands as a center of academic progress and moral development in Pirkhel, District Malkand. We strive to provide a safe, encouraging, and disciplined environment where students can grow academically, socially, and spiritually.
+          </p>
+          <p>
+            Our school believes in a balanced approach to education where strong teaching, student support, and values-based learning work together to create confident and responsible young leaders.
+          </p>
+        </div>
+      </section>
+
+      <section id="message" class="section message-section">
+        <div class="section-heading">
+          <p class="eyebrow">Principal's Message</p>
+          <h2>A message of hope, discipline, and excellence</h2>
+        </div>
+        <div class="message-box">
+          <p>
+            “At Pakistan School of Excellence, we believe education is the foundation of a brighter future. Our mission is to inspire students to learn with passion, lead with integrity, and serve their communities with pride.”
+          </p>
+          <strong>— Principal</strong>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Photo Gallery</p>
+          <h2>Moments of learning and achievement</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="photo-card">
+            <img id="galleryImage1" class="gallery-image hidden" alt="Gallery photo 1" />
+            <div id="galleryPlaceholder1" class="photo-placeholder">Upload School Photo</div>
+            <h3>Campus Life</h3>
+          </div>
+          <div class="photo-card">
+            <img id="galleryImage2" class="gallery-image hidden" alt="Gallery photo 2" />
+            <div id="galleryPlaceholder2" class="photo-placeholder">Upload Event Photo</div>
+            <h3>Academic Events</h3>
+          </div>
+          <div class="photo-card">
+            <img id="galleryImage3" class="gallery-image hidden" alt="Gallery photo 3" />
+            <div id="galleryPlaceholder3" class="photo-placeholder">Upload Student Activity</div>
+            <h3>Student Activities</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <h3>Pakistan School of Excellence</h3>
+      <p>Pirkhel, District Malkand, KPK, Pakistan</p>
+      <p><strong>Phone:</strong> 03129065510</p>
+      <p><strong>Email:</strong> aqeelshah65510@gmail.com</p>
+      <p><strong>Social:</strong> Facebook • YouTube • TikTok: pakistan school of excellence</p>
+      <p>Building a future through education and values.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
